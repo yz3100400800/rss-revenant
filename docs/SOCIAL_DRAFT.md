@@ -1,0 +1,1 @@
+#KiroweenHackathon26 What I like most about Kiro is spec-driven work that stays in the repo: steering docs, EARS requirements, and a hook that runs tests on save. It changes how I build — the spec is the source of truth, and the code has to answer to it.

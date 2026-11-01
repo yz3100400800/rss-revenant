@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.vercel
+.env
+.env*.local
+npm-debug.log*
+.DS_Store
+*.tsbuildinfo
+
+# .kiro is committed on purpose: steering, specs, and hooks belong in the repo.
