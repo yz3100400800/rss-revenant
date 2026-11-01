@@ -1,0 +1,22 @@
+# Feed management tasks
+
+- [x] 1. Seed and persist the feed list
+  - [x] 1.1 Preload the three sample feeds on the first visit
+    - Requirements: FM-1, FM-14
+  - [x] 1.2 Save additions, removals, and an intentionally empty list in localStorage
+    - Requirements: FM-2, FM-6, FM-7, FM-8
+- [x] 2. Validate URLs before they are stored or fetched
+  - [x] 2.1 Reject non-http, private, local, and credentialed URLs in the form and on the server
+    - Requirements: FM-3, FM-4, FM-5, FM-10
+  - [x] 2.2 Re-check redirect targets and cap the list at 20
+    - Requirements: FM-5, FM-10
+- [x] 3. Parse feeds on the server
+  - [x] 3.1 Parse RSS 2.0, Atom, and RSS 1.0 into plain-text items, newest first
+    - Requirements: FM-9, FM-12
+  - [x] 3.2 Return per-feed errors from POST /api/feeds without failing the whole batch
+    - Requirements: FM-11
+- [x] 4. Reader list
+  - [x] 4.1 Show all feeds or one feed, and replace hostname placeholders with the parsed title
+    - Requirements: FM-13, FM-15
+  - [x] 4.2 Cover parsing and the URL guard with Vitest
+    - Requirements: FM-10, FM-12
